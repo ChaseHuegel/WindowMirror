@@ -20,8 +20,24 @@
             <ColumnDefinition Width="167*"/>
             <ColumnDefinition Width="11*"/>
         </Grid.ColumnDefinitions>
-        <ComboBox x:Name="windowsComboBox" HorizontalAlignment="Left" Margin="10,17,0,0" VerticalAlignment="Top" Width="99" Height="22" Grid.Row="1"/>
-        <ComboBox x:Name="displaysComboBox" HorizontalAlignment="Left" Margin="114,17,0,0" VerticalAlignment="Top" Width="99" Height="22" Grid.Row="1"/>
+        <ComboBox x:Name="windowsComboBox" HorizontalAlignment="Left" Margin="10,17,0,0" VerticalAlignment="Top" Width="99" Height="22" Grid.Row="1"
+            DropDownOpened="windowsComboBox_Open"
+            SelectionChanged="windowsComboBox_Select">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding MainWindowTitle}" />
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <ComboBox x:Name="displaysComboBox" HorizontalAlignment="Left" Margin="114,17,0,0" VerticalAlignment="Top" Width="99" Height="22" Grid.Row="1"
+            DropDownOpened="displaysComboBox_Open"
+            SelectionChanged="displaysComboBox_Select">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding DeviceName}" />
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
         <Button x:Name="captureButton" HorizontalAlignment="Left" Margin="218,6,0,0" VerticalAlignment="Top" Width="128" Height="33" Click="captureButton_Click" Background="#FF2BA9F1" Grid.Row="1" Grid.ColumnSpan="2">
             <StackPanel Height="25" Width="76" Orientation="Horizontal">
                 <Image Source="/resources/camera-regular-60.png" Height="26" Margin="0"/>
@@ -50,5 +66,9 @@
                 <ImageBrush ImageSource="resources/minus-regular-60.png"/>
             </Button.Background>
         </Button>
+        <Canvas x:Name="errorPanel" HorizontalAlignment="Center" Height="26" Margin="114,0,30,5" VerticalAlignment="Bottom" Width="190">
+            <Image x:Name="errorIcon" Height="26" Width="26" Source="resources/error-solid-60.png"/>
+            <Label x:Name="errorMessage" Content="ERROR" Canvas.Left="26" Height="26" Width="148" Foreground="White" VerticalContentAlignment="Center" FontSize="14" FontFamily="Tw Cen MT" Padding="0"/>
+        </Canvas>
     </Grid>
 </Window>
