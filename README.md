@@ -10,6 +10,7 @@ The minimal functions needed for the app to do what its intended is a control pa
 
 ## Control panel
 The control panel is always on top and draggable from anywhere on the window for easy of use. It pulls lists of valid windows and displays for capturing, and has a preview area where a live view will be streamed.
+
 ![74d4e4b99444bf6759d47b0169257548](https://user-images.githubusercontent.com/14932139/115769875-0e870780-a37a-11eb-97c7-bc56cbdad0c3.gif)
 
 # More features
