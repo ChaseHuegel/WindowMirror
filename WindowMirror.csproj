@@ -94,5 +94,18 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\camera-regular-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\right-top-arrow-circle-regular-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\windows-regular-240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\minus-regular-60.png" />
+    <Resource Include="resources\x-regular-60.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -24,5 +24,40 @@ namespace WindowMirror
         {
             InitializeComponent();
         }
+
+        private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void popOutButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void captureButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void closeButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void minimizeButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Window_LeftMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
     }
 }

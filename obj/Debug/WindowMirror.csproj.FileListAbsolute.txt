@@ -1,0 +1,15 @@
+D:\Projects\C#\WindowMirror\bin\Debug\WindowMirror.exe.config
+D:\Projects\C#\WindowMirror\bin\Debug\WindowMirror.exe
+D:\Projects\C#\WindowMirror\bin\Debug\WindowMirror.pdb
+D:\Projects\C#\WindowMirror\obj\Debug\WindowMirror.csprojAssemblyReference.cache
+D:\Projects\C#\WindowMirror\obj\Debug\MainWindow.g.cs
+D:\Projects\C#\WindowMirror\obj\Debug\App.g.cs
+D:\Projects\C#\WindowMirror\obj\Debug\WindowMirror_MarkupCompile.cache
+D:\Projects\C#\WindowMirror\obj\Debug\WindowMirror_MarkupCompile.lref
+D:\Projects\C#\WindowMirror\obj\Debug\MainWindow.baml
+D:\Projects\C#\WindowMirror\obj\Debug\WindowMirror.g.resources
+D:\Projects\C#\WindowMirror\obj\Debug\WindowMirror.Properties.Resources.resources
+D:\Projects\C#\WindowMirror\obj\Debug\WindowMirror.csproj.GenerateResource.cache
+D:\Projects\C#\WindowMirror\obj\Debug\WindowMirror.csproj.CoreCompileInputs.cache
+D:\Projects\C#\WindowMirror\obj\Debug\WindowMirror.exe
+D:\Projects\C#\WindowMirror\obj\Debug\WindowMirror.pdb
