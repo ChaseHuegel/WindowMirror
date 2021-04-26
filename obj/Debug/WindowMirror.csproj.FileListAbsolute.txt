@@ -13,3 +13,5 @@ D:\Projects\C#\WindowMirror\obj\Debug\WindowMirror.csproj.GenerateResource.cache
 D:\Projects\C#\WindowMirror\obj\Debug\WindowMirror.csproj.CoreCompileInputs.cache
 D:\Projects\C#\WindowMirror\obj\Debug\WindowMirror.exe
 D:\Projects\C#\WindowMirror\obj\Debug\WindowMirror.pdb
+D:\Projects\C#\WindowMirror\obj\Debug\PopOutViewer.g.cs
+D:\Projects\C#\WindowMirror\obj\Debug\PopOutViewer.baml

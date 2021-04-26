@@ -19,6 +19,8 @@ namespace WindowMirror
         private ObservableCollection<Monitor> displays = new ObservableCollection<Monitor>();
         private Timer errorTimer = new Timer();
 
+        PopOutViewer viewerWindow;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -39,7 +41,10 @@ namespace WindowMirror
 
         private void popOutButton_Click(object sender, RoutedEventArgs e)
         {
+            if (viewerWindow != null) viewerWindow.Close();
 
+            viewerWindow = new PopOutViewer();
+            viewerWindow.Show();
         }
 
         private void captureButton_Click(object sender, RoutedEventArgs e)
