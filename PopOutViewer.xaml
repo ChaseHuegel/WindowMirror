@@ -15,5 +15,17 @@
             </Button.Background>
         </Button>
 
+        <Button x:Name="minimizeButton" Content="" HorizontalAlignment="Right" VerticalAlignment="Top" Width="24" Height="24" BorderBrush="{x:Null}" Foreground="#FF8F8F8F" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0" UseLayoutRounding="False" FontWeight="ExtraLight" Click="minimizeButton_Click" FontSize="20" FontStretch="Condensed" Margin="0,0,29,0">
+            <Button.Background>
+                <ImageBrush ImageSource="resources/minus-regular-60.png"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="captureButton" Content="" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="24" Height="24" BorderBrush="{x:Null}" Foreground="#FF8F8F8F" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0" UseLayoutRounding="False" FontWeight="ExtraLight" Click="captureButton_Click" FontSize="20" FontStretch="Condensed" Margin="10,0,0,10">
+            <Button.Background>
+                <ImageBrush ImageSource="resources/camera-regular-60.png"/>
+            </Button.Background>
+        </Button>
+
     </Grid>
 </Window>

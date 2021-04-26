@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WindowMirror"
         mc:Ignorable="d"
         MouseLeftButtonDown="Window_LeftMouseDown"
-        Title="Controls" Height="301" Width="356" Topmost="True" ResizeMode="NoResize" Visibility="Visible" Focusable="False" BorderBrush="#FF394653" AllowsTransparency="True" WindowStyle="None" Icon="resources/windows-regular-240.png">
+        Title="WindowMirror" Height="301" Width="356" Topmost="True" ResizeMode="NoResize" Visibility="Visible" Focusable="False" BorderBrush="#FF394653" AllowsTransparency="True" WindowStyle="None" Icon="resources/windows-regular-240.png">
     <Window.Background>
         <SolidColorBrush Color="#FF394653"/>
     </Window.Background>

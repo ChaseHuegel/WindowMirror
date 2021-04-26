@@ -43,7 +43,7 @@ namespace WindowMirror
         {
             if (viewerWindow != null) viewerWindow.Close();
 
-            viewerWindow = new PopOutViewer();
+            viewerWindow = new PopOutViewer(this);
             viewerWindow.Show();
         }
 
@@ -54,7 +54,10 @@ namespace WindowMirror
 
         private void closeButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            if (viewerWindow != null && viewerWindow.IsVisible)
+                this.Hide();
+            else
+                this.Close();
         }
 
         private void minimizeButton_Click(object sender, RoutedEventArgs e)
