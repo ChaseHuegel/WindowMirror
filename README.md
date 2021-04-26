@@ -8,6 +8,11 @@ This tool gives you an overlay that you can use for multitasking, watching video
 # MVP
 The minimal functions needed for the app to do what its intended is a control panel with the ability to select a display or monitor to capture, a button to start the capture, preview panel of what is being captured, and the ability to pop out a borderless always-on-top viewer of the live feed that can be moved anywhere on your desktop.
 
+## Viewer
+The viewer stays on top, can be dragged, and resized. This is where the current capture will be mirrored and is the main feature of the app. It is minimal and borderless to maximize viewing space, it will have minimal controls and they will later be contexual - only showing when the window is hovered.
+
+![6a0b0465debd4c1b9796a0c17b757462](https://user-images.githubusercontent.com/14932139/116032589-f5a67c80-a62d-11eb-9b60-1fbfac5019a3.gif)
+
 ## Control panel
 The control panel is always on top and draggable from anywhere on the window for easy of use. It pulls lists of valid windows and displays for capturing, and has a preview area where a live view will be streamed.
 
