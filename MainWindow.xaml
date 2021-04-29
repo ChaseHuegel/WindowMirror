@@ -17,8 +17,7 @@
             <RowDefinition Height="228*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="167*"/>
-            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <ComboBox x:Name="windowsComboBox" HorizontalAlignment="Left" Margin="10,17,0,0" VerticalAlignment="Top" Width="99" Height="22" Grid.Row="1"
             DropDownOpened="windowsComboBox_Open"
@@ -38,38 +37,38 @@
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
-        <Button x:Name="captureButton" HorizontalAlignment="Left" Margin="218,6,0,0" VerticalAlignment="Top" Width="128" Height="33" Click="captureButton_Click" Background="#FF2BA9F1" Grid.Row="1" Grid.ColumnSpan="2">
+        <Button x:Name="captureButton" HorizontalAlignment="Left" Margin="218,6,0,0" VerticalAlignment="Top" Width="128" Height="33" Click="captureButton_Click" Background="#FF2BA9F1" Grid.Row="1">
             <StackPanel Height="25" Width="76" Orientation="Horizontal">
                 <Image Source="/resources/camera-regular-60.png" Height="26" Margin="0"/>
                 <Label x:Name="label" Content="Capture" Margin="-3,-1,0,-1" Foreground="White" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="27" Width="52"/>
             </StackPanel>
 
         </Button>
-        <Rectangle x:Name="previewRectangle" Fill="#FF171717" HorizontalAlignment="Left" Height="218" Stroke="Black" VerticalAlignment="Top" Width="336" Margin="10,0,0,0" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <Rectangle x:Name="previewRectangle" Fill="#FF171717" HorizontalAlignment="Left" Height="218" Stroke="Black" VerticalAlignment="Top" Width="336" Margin="10,0,0,0" Grid.Row="2"/>
 
-        <Image x:Name="previewImage" HorizontalAlignment="Left" Height="218" Margin="10,0,0,0" Grid.Row="2" VerticalAlignment="Top" Width="336"/>
-    
-        <Button x:Name="popOutButton" Content="" HorizontalAlignment="Left" Margin="306,0,0,0" VerticalAlignment="Top" Width="40" Height="40" Grid.Row="2" Click="popOutButton_Click" BorderBrush="{x:Null}" Foreground="{x:Null}" Grid.ColumnSpan="2">
+        <Image x:Name="previewImage" HorizontalAlignment="Left" Height="218" Margin="10,0,0,0" Grid.Row="2" VerticalAlignment="Top" Width="336" Stretch="Fill"/>
+
+        <Button x:Name="popOutButton" Content="" HorizontalAlignment="Left" Margin="306,0,0,0" VerticalAlignment="Top" Width="40" Height="40" Grid.Row="2" Click="popOutButton_Click" BorderBrush="{x:Null}" Foreground="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="resources/right-top-arrow-circle-regular-60.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
         <Label x:Name="windowsLabel" Content="Window" HorizontalAlignment="Left" VerticalAlignment="Top" Height="19" Width="99" FontSize="11" Margin="10,0,0,0" Foreground="White" Padding="0" VerticalContentAlignment="Bottom" RenderTransformOrigin="0.505,0.632" Grid.Row="1"/>
         <Label x:Name="windowsLabel_Copy" Content="Display" HorizontalAlignment="Left" Margin="114,0,0,0" Height="19" Width="93" FontSize="11" Foreground="White" VerticalAlignment="Top" Padding="0" VerticalContentAlignment="Bottom" Grid.Row="1"/>
-        <Separator HorizontalAlignment="Left" Height="31" Margin="10,17,0,0" VerticalAlignment="Top" Width="336" Grid.RowSpan="2" Background="#FF171717" Grid.ColumnSpan="2"/>
+        <Separator HorizontalAlignment="Left" Height="31" Margin="10,17,0,0" VerticalAlignment="Top" Width="336" Grid.RowSpan="2" Background="#FF171717"/>
         <Label x:Name="label1" Content="Window Mirror" HorizontalAlignment="Left" Margin="29,0,0,0" VerticalAlignment="Top" Width="99" Foreground="White"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="24" Source="resources/windows-regular-240.png" Margin="5,2,0,0"/>
-        <Button x:Name="closeButton" Content="" HorizontalAlignment="Right" VerticalAlignment="Top" Width="24" Height="24" BorderBrush="{x:Null}" Foreground="#FF8F8F8F" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0" UseLayoutRounding="False" FontWeight="ExtraLight" Click="closeButton_Click" FontSize="20" FontStretch="Condensed" Grid.ColumnSpan="2">
+        <Button x:Name="closeButton" Content="" HorizontalAlignment="Right" VerticalAlignment="Top" Width="24" Height="24" BorderBrush="{x:Null}" Foreground="#FF8F8F8F" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0" UseLayoutRounding="False" FontWeight="ExtraLight" Click="closeButton_Click" FontSize="20" FontStretch="Condensed">
             <Button.Background>
                 <ImageBrush ImageSource="resources/x-regular-60.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="minimizeButton" Content="" HorizontalAlignment="Right" VerticalAlignment="Top" Width="24" Height="24" BorderBrush="{x:Null}" Foreground="#FF8F8F8F" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0" UseLayoutRounding="False" FontWeight="ExtraLight" Click="minimizeButton_Click" FontSize="20" FontStretch="Condensed" Margin="0,0,7,0">
+        <Button x:Name="minimizeButton" Content="" HorizontalAlignment="Right" VerticalAlignment="Top" Width="24" Height="24" BorderBrush="{x:Null}" Foreground="#FF8F8F8F" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0" UseLayoutRounding="False" FontWeight="ExtraLight" Click="minimizeButton_Click" FontSize="20" FontStretch="Condensed" Margin="0,0,29,0">
             <Button.Background>
                 <ImageBrush ImageSource="resources/minus-regular-60.png"/>
             </Button.Background>
         </Button>
-        <Canvas x:Name="errorPanel" HorizontalAlignment="Center" Height="26" Margin="114,0,30,5" VerticalAlignment="Bottom" Width="190">
+        <Canvas x:Name="errorPanel" HorizontalAlignment="Center" Height="26" Margin="114,0,52,5" VerticalAlignment="Bottom" Width="190">
             <Image x:Name="errorIcon" Height="26" Width="26" Source="resources/error-solid-60.png"/>
             <Label x:Name="errorMessage" Content="ERROR" Canvas.Left="26" Height="26" Width="148" Foreground="White" VerticalContentAlignment="Center" FontSize="14" FontFamily="Tw Cen MT" Padding="0"/>
         </Canvas>

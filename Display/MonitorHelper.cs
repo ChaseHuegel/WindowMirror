@@ -30,7 +30,7 @@ using System.Windows;
 
 namespace WindowMirror.Display
 {
-    class Monitor
+    public class Monitor
     {
         public bool IsPrimary { get; set; }
         public Vector2 ScreenSize { get; set; }
@@ -40,7 +40,7 @@ namespace WindowMirror.Display
         public IntPtr Hmon { get; set; }
     }
 
-    static class MonitorHelper
+    public static class MonitorHelper
     {
         delegate bool EnumMonitorsDelegate(IntPtr hMonitor, IntPtr hdcMonitor, ref RECT lprcMonitor, IntPtr dwData);
 

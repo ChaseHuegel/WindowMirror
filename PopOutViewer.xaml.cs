@@ -22,12 +22,12 @@ namespace WindowMirror
     /// </summary>
     public partial class PopOutViewer : Window
     {
-        public MainWindow mainWindow;
+        public MainWindow main;
         public BitmapSource bitmapSource;
 
         public PopOutViewer(MainWindow mainWindow)
         {
-            this.mainWindow = mainWindow;
+            this.main = mainWindow;
 
             InitializeComponent();
         }
@@ -35,7 +35,7 @@ namespace WindowMirror
         private void closeButton_Click(object sender, RoutedEventArgs e)
         {
             //  Close the app if the main window is hidden
-            if (mainWindow != null && !mainWindow.IsVisible)
+            if (main != null && !main.IsVisible)
                 Application.Current.Shutdown();
 
             this.Close();
@@ -43,28 +43,24 @@ namespace WindowMirror
 
         private void minimizeButton_Click(object sender, RoutedEventArgs e)
         {
-            if (mainWindow != null && !mainWindow.IsVisible)
-                mainWindow.Show();
+            if (main != null && !main.IsVisible)
+                main.Show();
 
             this.Hide();
         }
 
         private void captureButton_Click(object sender, RoutedEventArgs e)
         {
-            if (mainWindow.windowsComboBox.SelectedIndex == -1) return;
+            viewerImage.Width = this.Width;
+            viewerImage.Height = this.Height;
 
-            Process process = (Process)mainWindow.windowsComboBox.SelectedItem;
+            Process process = main.GetSelectedWindow();
+            Monitor display = main.GetSelectedDisplay();
 
             if (process != null)
-            {
-                IntPtr hwnd = process.MainWindowHandle;
-
-                viewerImage.Source = Capture.Snapshot(hwnd, 0, 0, (int)this.Width, (int)this.Height);
-
-                //  Make sure the image size matches the window size
-                viewerImage.Width = this.Width;
-                viewerImage.Height = this.Height;
-            }
+                viewerImage.Source = Capture.SnapshotWindow(process.MainWindowHandle, 0, 0, (int)viewerImage.Width, (int)viewerImage.Height);
+            else if (display != null)
+                viewerImage.Source = Capture.SnapshotDisplay(display, 0, 0, (int)viewerImage.Width, (int)viewerImage.Height);
         }
 
         private void Window_LeftMouseDown(object sender, MouseButtonEventArgs e)
