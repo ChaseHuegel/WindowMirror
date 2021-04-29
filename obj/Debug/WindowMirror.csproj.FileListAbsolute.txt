@@ -15,3 +15,12 @@ D:\Projects\C#\WindowMirror\obj\Debug\WindowMirror.exe
 D:\Projects\C#\WindowMirror\obj\Debug\WindowMirror.pdb
 D:\Projects\C#\WindowMirror\obj\Debug\PopOutViewer.g.cs
 D:\Projects\C#\WindowMirror\obj\Debug\PopOutViewer.baml
+D:\Projects\C#\WindowMirror\bin\Debug\SharpDX.Direct3D11.dll
+D:\Projects\C#\WindowMirror\bin\Debug\SharpDX.dll
+D:\Projects\C#\WindowMirror\bin\Debug\SharpDX.DXGI.dll
+D:\Projects\C#\WindowMirror\bin\Debug\SharpDX.pdb
+D:\Projects\C#\WindowMirror\bin\Debug\SharpDX.Direct3D11.pdb
+D:\Projects\C#\WindowMirror\bin\Debug\SharpDX.Direct3D11.xml
+D:\Projects\C#\WindowMirror\bin\Debug\SharpDX.DXGI.pdb
+D:\Projects\C#\WindowMirror\bin\Debug\SharpDX.DXGI.xml
+D:\Projects\C#\WindowMirror\obj\Debug\WindowMirror.csproj.CopyComplete

@@ -49,7 +49,16 @@ namespace WindowMirror
 
         private void captureButton_Click(object sender, RoutedEventArgs e)
         {
+            if (windowsComboBox.SelectedIndex == -1) return;
 
+            Process process = (Process)windowsComboBox.SelectedItem;
+
+            if (process != null)
+            {
+                IntPtr hwnd = process.MainWindowHandle;
+
+                previewImage.Source = Capture.Snapshot(hwnd, 0, 0, (int)previewImage.Width, (int)previewImage.Height);
+            }
         }
 
         private void closeButton_Click(object sender, RoutedEventArgs e)
@@ -132,7 +141,6 @@ namespace WindowMirror
             //  Default to primary display if there are no others
             if (displays.Count == 1)
             {
-                //displaysComboBox.IsEnabled = false;
                 displaysComboBox.SelectedIndex = 0;
             }
 

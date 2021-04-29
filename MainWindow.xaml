@@ -46,6 +46,9 @@
 
         </Button>
         <Rectangle x:Name="previewRectangle" Fill="#FF171717" HorizontalAlignment="Left" Height="218" Stroke="Black" VerticalAlignment="Top" Width="336" Margin="10,0,0,0" Grid.Row="2" Grid.ColumnSpan="2"/>
+
+        <Image x:Name="previewImage" HorizontalAlignment="Left" Height="218" Margin="10,0,0,0" Grid.Row="2" VerticalAlignment="Top" Width="336"/>
+    
         <Button x:Name="popOutButton" Content="" HorizontalAlignment="Left" Margin="306,0,0,0" VerticalAlignment="Top" Width="40" Height="40" Grid.Row="2" Click="popOutButton_Click" BorderBrush="{x:Null}" Foreground="{x:Null}" Grid.ColumnSpan="2">
             <Button.Background>
                 <ImageBrush ImageSource="resources/right-top-arrow-circle-regular-60.png" Stretch="Uniform"/>

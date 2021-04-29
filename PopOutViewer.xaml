@@ -9,6 +9,8 @@
         Title="Mirror" Height="218" Width="336" Topmost="True" Background="#FF171717" WindowStyle="None" ResizeMode="CanResizeWithGrip" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
     <Grid>
 
+        <Image x:Name="viewerImage" HorizontalAlignment="Left" Height="218" VerticalAlignment="Top" Width="336" Stretch="Fill" ScrollViewer.VerticalScrollBarVisibility="Disabled"/>
+
         <Button x:Name="closeButton" Content="" HorizontalAlignment="Right" VerticalAlignment="Top" Width="24" Height="24" BorderBrush="{x:Null}" Foreground="#FF8F8F8F" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0" UseLayoutRounding="False" FontWeight="ExtraLight" Click="closeButton_Click" FontSize="20" FontStretch="Condensed">
             <Button.Background>
                 <ImageBrush ImageSource="resources/x-regular-60.png"/>
